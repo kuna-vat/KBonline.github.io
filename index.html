@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>KBonline</title>
+</head>
+<body>
+  <header>
+<video  controls>
+  <source src="Sea .mp4" type="video/mp4">
+  <source src="Sea .mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+          <nav>
+            <div class="logo">
+            KB<span>ON</span>LINE 
+            </div>
+            <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+</div>
+<div class="icon">
+  <i class="fas fa-search"></i>
+  <a href="#">Login</a>
+</div>
+          </nav>
+          <section class="h-text">
+      <i class="fas fa-camera" id="camera">
+        <h1>Capturing Moment</h1>
+ <input type="text" name="" placeholder="search here..">
+   <button><i class="fa fa-search"></button>
+          </section>
+  </header>
+  <section class="filter-gallery">
+    <div class="portfolio-menu">
+      <ul>
+ <li class="active".data-filter="*">All</li>
+ <li data-filter=".nature">Nature</li>
+ <li data-filter=".faishon">Faishon</li>
+ <li data-filter=".wedding">Wedding</li>
+  <li data-filter=".food">Food</li>
+ 
+ 
+      </ul>
+    </div>
+    <div class="portfolio-item">
+      <div class="item nature">
+        <img src="nature.jpeg" alt="nature.jpeg" width="100" height="100">
+        
+      </div>
+          <div class="item faishon">
+        <img src="faishon.jpeg" alt="faishon.jpeg" width="100" height="100">
+        
+      </div>
+       <div class="item wedding">
+        <img src="wedding (4).jpeg" alt="wedding (4).jpeg" width="100" height="100">
+        
+      </div>
+        <div class="item food">
+        <img src="Caketrans1023.jpeg" alt="Caketrans1023.jpeg" width="100" height="100">
+        
+      </div>
+     <div class="portfolio-item">
+      <div class="item nature">
+        <img src="nature2.jpeg" alt="nature.jpeg" width="100" height="100">
+        
+      </div>
+          <div class="item faishon">
+        <img src="faishon.jpeg" alt="faishon.jpeg" width="100" height="100">
+        
+      </div>
+       <div class="item wedding">
+        <img src="wedding.jpeg" alt="wedding (4).jpeg" width="100" height="100">
+        
+      </div>
+        <div class="item food">
+        <img src="cake102.jpeg" alt="Caketrans1023.jpeg" width="100" height="100">
+        
+      </div>
+      
+    </div>
+    
+  </section>
+  <section class="member">
+    <div class="member-info">
+      <h1>Our <span>Information</span></h1>
+      <p>What our member says?</p>
+    </div>
+    <div class="member-card">
+      <img src="photo.jpg" width="100">
+      <p>KBonline, Our company will be
+      provided you various useable better services and product for your valuable lifestyle. </p>
+      <h2>Kunal Bhattacharjee</h2>
+          <img src="Vicky.jpg" width="100">
+  <p> Hey guy's, my name is Vicky Prasad
+  I will be provided you self groom and also men beauty parlour on your home by KBonline </p>
+          <h2>Vicky Prasad</h2>
+          <img src="icon1.png" width="100">
+          <img src="icon2.png" width="100">
+         <img src="icon3.jpeg" width="100">
+          <img src="icon5.jpeg" width="100>
+   </div>
+    <div class="m-images">
+        
+   </div>
+  </section>
+  
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+ <script type="text/javascript">
+$('.portfolio-item').isotope({
+     // options
+     itemSelector:'.item',
+     layoutMode: 'fitRows'
+   });
+   $('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeclass('active');
+    $(this).addclass('active');
+  
+  var selector = $(this).attr('data-filter');
+  $('.portfolio-item').isotope({filter-selector
+   });
+   return false;
+   
+   });
+ </script>
+</body>
+</html>
